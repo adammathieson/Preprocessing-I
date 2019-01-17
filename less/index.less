@@ -53,7 +53,25 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html {
+body {
+	height: 100%;
+}
 }
 
+//mix-in
+.nav-align() {
+	display: flex;
+	justify-content: flex-end;
+}
+.container {
+	width: 800px;
+	padding: 5%;
+
+	header {
+		.nav-align;
+	}
+	nav a {
+		padding-left: 10%;
+	}
+}
